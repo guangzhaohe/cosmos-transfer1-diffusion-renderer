@@ -107,7 +107,11 @@ def process_environment_map(
     )
 
     # Prepare rotations for the environment light
-    rots = np.linspace(0, 2 * np.pi, num_frames) if rotate_envlight else [0] * num_frames
+    rot_u = list(range(num_frames))
+    rot_u = [(i+0.5) / num_frames for i in rot_u]
+
+    # rots = np.linspace(0, 2 * np.pi, num_frames) if rotate_envlight else [0] * num_frames
+    rots = -np.array(rot_u) * 2 * np.pi if rotate_envlight else [0] * num_frames
 
     # Load and preprocess the HDR environment map
     cubemap = load_and_preprocess_hdr(

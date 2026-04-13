@@ -1,3 +1,4 @@
+
 # SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -167,6 +168,9 @@ ENV_LIGHT_PATH_LIST = [
     "asset/examples/hdri_examples/pink_sunrise_2k.hdr",
     "asset/examples/hdri_examples/street_lamp_2k.hdr",
     "asset/examples/hdri_examples/rosendal_plains_1_2k.hdr",
+    "asset/examples/hdri_examples/evenly_spaced_black_white_black.hdr",
+    "asset/examples/hdri_examples/evenly_spaced_white_black_white.hdr",
+    "asset/examples/hdri_examples/rainbow_360.hdr",
 ]
 
 
